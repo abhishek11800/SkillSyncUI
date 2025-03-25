@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0.5rem; /* Ensures it fits inside signup-form */
+    pointer-events: none;  /*Allows clicks to pass through*/
+}
+
+
+.signup-page {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 4.375rem;
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.6));
+}
+.signup-form {
+    position: relative;
+    /* background-color: white ; */
+    padding: 1.875rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    width: 28.125rem; /* Adjust width as needed */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4));
+}
+
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 3.125rem;
+    margin-left: 4rem;
+    color: aqua;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 6s ease-in-out infinite alternate;
+    font-size: 1.5rem;
+    border-right: .15rem solid aqua;
+}
+@keyframes typing {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 64%;
+    }
+    100% {
+        width: 0%; /* Reversing back */
+    }
+}
+.input-group {
+    position: relative;
+    margin-bottom: 1.25rem;
+    margin-left: 1.875rem;
+}
+.input-group input {
+    width: calc(100% - 1.375rem);
+    padding: 0.625rem;
+    margin-bottom: 0.9375rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-group label {
+    position: absolute;
+    left: 0.9375rem;
+    top: 35%;
+    transform: translateY(-50%);
+    background: transparent;
+    padding: 0 0.3125rem;
+    color: #ccc;
+    transition: transform 0.3s ease-in-out;
+    font-size: 0.9375rem;
+}
+input:focus {
+    border-color: aqua;
+    background-color: rgba(0, 255, 255, 0.1);
+}
+/* input:focus+label{
+    transform: translateY(-2.5rem) translateX(-0.625rem);
+    border-color: aqua;
+    color: aqua;
+    font-size: small;
+} */
+.input-group input:not(:placeholder-shown) + label,
+.input-group input:focus + label {
+    transform: translateY(-2.5rem) translateX(-0.625rem);
+    color: aqua;
+    font-size: small;
+}
+
+.signup-form button {
+    background-color: aqua;
+    color: #000000;
+    padding: 0.625rem 1.25rem;
+    margin-left: 8.75rem;
+    border: none;
+    border-radius: 1.875rem;
+    cursor: pointer;
+    width: 30%;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: darkturquoise;
+}
+
+.icon img{
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    color: #333;
+    background-color: #eee;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+.or-continue {
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 0.9375rem;
+}
+.or-continue p{
+    margin-bottom: 0.5rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-buttons a:hover {
+    opacity: 0.8;
+}
+
+.already-account {
+    text-align: center;
+    margin-top: 1.25rem;
+}
+
+.already-account a {
+    display: inline-block;
+    color: aqua;
+}
+.already-account a:hover{
+    color: darkturquoise;
+}

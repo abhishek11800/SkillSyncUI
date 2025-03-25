@@ -1,0 +1,59 @@
+/* Reset Password Page Styling */
+.reset-password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1E1E2F;
+  }
+  
+  .reset-password-box {
+    background: rgb(192, 191, 191);;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+  }
+  
+  .reset-password-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .reset-password-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reset-password-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .reset-password-box button {
+    background: #04d4f0;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .reset-password-box button:hover {
+    background: #05c7e0;
+  }
+  
+  .reset-password-box button:disabled {
+    background: #bbb;
+    cursor: not-allowed;
+  }
+  

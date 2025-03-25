@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    overflow: hidden;
+}
+
+#particles-js {
+    position: fixed;
+    width: 37.5rem;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.login-logo {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #000000;
+    position: absolute;
+    top: 1.25rem;
+    left: 3.125rem;
+}
+
+.login-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrapper {
+    display: flex;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+
+.login-left-section {
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.6));
+    color: white;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-side.login p {
+    position: relative;
+    color: #000000;
+    margin-left: 4.5rem;
+}
+
+.login-right-section {
+    background-color: white;
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    max-width: 25rem;
+}
+
+.login-form h2 {
+    margin-bottom: 0.625rem;
+    margin-left: 5rem;
+    color: aqua;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type 6s ease-in-out infinite alternate;
+    font-size: 1.5rem;
+    border-right: .15rem solid aqua;
+}
+
+@keyframes type {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 54%;
+    }
+    100% {
+        width: 0%; /* Reversing back */
+    }
+}
+
+.login-icon img {
+    display: inline-block;
+    margin: 0 1.25rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    background-color: #eee;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.login-form p {
+    text-align: center;
+    margin-bottom: 1.25rem;
+    color: #030202;
+}
+
+.login-social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-bottom: 0.9375rem;
+}
+
+.login-social-buttons a:hover {
+    opacity: 0.8;
+}
+
+.login-or-continue {
+    text-align: center;
+    color: #666;
+    margin-bottom: 1.25rem;
+}
+
+.login-input-group {
+    position: relative;
+    margin-bottom: 0.9375rem;
+}
+
+.login-input-group input {
+    width: 21.875rem;
+    padding: 0.625rem;
+    margin-bottom: 0.9375rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
+    outline: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+    color: #000000;
+}
+
+.login-label {
+    position: absolute;
+    left: 0.9375rem;
+    top: 40%;
+    transform: translateY(-50%);
+    background: transparent;
+    padding: 0 0.3125rem;
+    color: #b2afaf;
+    transition: transform 0.3s ease-in-out;
+    font-size: 0.95rem;
+}
+
+
+.login-input-group input:not(:placeholder-shown) + label,
+.login-input-group input:focus + label {
+    transform: translateY(-2.75rem) translateX(-0.625rem);
+    border-color: aqua;
+    color: aqua;
+    font-size: 0.75rem;
+}
+
+.login-remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.login-remember label {
+    display: flex;
+    align-items: center;
+    color: aqua;
+    font-size: 0.875rem;
+}
+
+.login-remember input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; /* Makes it circular */
+    border: 2px solid #00ffff;
+    appearance: none; /* Removes default styling */
+    background-color: white;
+    cursor: pointer;
+    margin-right: 0.3125rem;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #00ffff; 
+}
+
+
+.login-forgot-password {
+    color: aqua;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.login-button {
+    background: aqua;
+    color: black;
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1.875rem;
+    cursor: pointer;
+    margin-left: 8.125rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.625rem;
+}
+
+.login-button:hover {
+    background: darkturquoise;
+    color: black;
+}
+
+.login-no-account {
+    text-align: center;
+    margin-top: 1.25rem;
+}
+
+.login-no-account a {
+    display: inline-block;
+    color: aqua;
+}
+
+.login-no-account a:hover {
+    color: darkturquoise;
+}
